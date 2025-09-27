@@ -1,8 +1,40 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{9D3B5051-5C35-4A00-A745-0FBBF942247D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{CCB129B2-ACCC-4A71-AF7A-32A83233BA83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.API", "Services\Catalog\Catalog.API\Catalog.API.csproj", "{32446D5E-11AB-416D-AB1B-F512B0C86568}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{A574079A-D75C-4A10-BA01-B5B9287F1493}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildingBlocks", "BuildingBlocks\BuildingBlocks\BuildingBlocks.csproj", "{63CADCFE-E498-462D-A5CC-07F2DBC6DA52}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D9A77312-996F-4C8F-A5C0-804DE2593212}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.dcproj = docker-compose.dcproj
+		docker-compose.override.yml = docker-compose.override.yml
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CCB129B2-ACCC-4A71-AF7A-32A83233BA83} = {9D3B5051-5C35-4A00-A745-0FBBF942247D}
+		{32446D5E-11AB-416D-AB1B-F512B0C86568} = {CCB129B2-ACCC-4A71-AF7A-32A83233BA83}
+		{63CADCFE-E498-462D-A5CC-07F2DBC6DA52} = {A574079A-D75C-4A10-BA01-B5B9287F1493}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32446D5E-11AB-416D-AB1B-F512B0C86568}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32446D5E-11AB-416D-AB1B-F512B0C86568}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32446D5E-11AB-416D-AB1B-F512B0C86568}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32446D5E-11AB-416D-AB1B-F512B0C86568}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63CADCFE-E498-462D-A5CC-07F2DBC6DA52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63CADCFE-E498-462D-A5CC-07F2DBC6DA52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63CADCFE-E498-462D-A5CC-07F2DBC6DA52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63CADCFE-E498-462D-A5CC-07F2DBC6DA52}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
